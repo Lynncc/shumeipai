@@ -4,7 +4,7 @@ XX = g++
 # CFLAGS = -Wall -O –g
 LDFLAGS = -lwiringPi
 
-TARGET = oled_str
+TARGET = oled_badapple
 
 %.o: %.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -c $< -o $@
