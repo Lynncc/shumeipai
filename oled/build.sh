@@ -10,16 +10,9 @@
 # 	done
 # }
 
-if [ $# -lt 1 ]; then
-	echo "please enter moudle name"
-	echo "for example:"
-	echo "    ./build init"
-	echo "    ./build clean init "
-	echo "    ./build help init "
-	exit
-else
-	para=$1
-	project=$2
-fi
 
-make ${para} moudle="${project}"
+words="init str time badapple ip"
+for i in ${words}; do
+	make ${1} moudle="${i}"
+done
+
